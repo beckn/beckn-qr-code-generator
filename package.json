@@ -2,7 +2,6 @@
   "name": "beckn-qr",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,12 +10,20 @@
     "devel": "nodemon server.js"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "jimp": "^0.22.10",
+    "jsqr": "^1.4.0",
     "mongoose": "^6.10.0",
+    "qr-scanner": "^1.4.2",
     "qrcode": "^1.5.3",
+    "qrcode-reader": "^1.0.4",
+    "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
@@ -28,6 +35,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
     "nodemon": "^3.0.1",
+    "tailwindcss": "^3.3.3",
     "vite": "^4.4.0"
   }
 }

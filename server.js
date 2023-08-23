@@ -1,15 +1,17 @@
-import express from "express";
-import mongoose from "mongoose";
-import bodyParser from "body-parser";
-import QRCode from "qrcode"; // Import QR code library
-import { v4 as uuidv4 } from 'uuid';
+const express = require('express');
+const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
+const QRCode = require('qrcode')
+const uuid = require('uuid');
 
 const app = express();
+const cors = require('cors');
+app.use(cors())
 
 app.use(bodyParser.json());
 
 function generateUniqueId() {
-    return uuidv4();
+    return uuid.v4();
 }
 
 // MongoDB setup and schema definition
@@ -32,17 +34,6 @@ const dataSchema = new mongoose.Schema({
 
 const DataModel = mongoose.model('Data', dataSchema);
 
-// Function to generate QR code and return data URL
-async function generateQRCode(data) {
-    try {
-        const qrCodeDataURL = await QRCode.toDataURL(data);
-        return qrCodeDataURL;
-    } catch (error) {
-        console.error("Error generating QR code:", error);
-        throw error;
-    }
-}
-
 // Admin posts JSON data to generate QR code
 app.post('/qrGenerator', async (req, res) => {
     const jsonData = req.body;
@@ -56,10 +47,8 @@ app.post('/qrGenerator', async (req, res) => {
 
     await dataEntry.save();
 
-    // Generate QR code with the unique identifier
-    const qrCodeDataURL = await generateQRCode(uniqueId);
 
-    res.send({ success: true, qrCodeDataURL });
+    res.send({ success: true, uniqueId });
 });
 
 // User scans QR code to retrieve and display data
@@ -75,4 +64,3 @@ app.get('/getData/:id', async (req, res) => {
         res.status(404).send("Data not found.");
     }
 });
-
