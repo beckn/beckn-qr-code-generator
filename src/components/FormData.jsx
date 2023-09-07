@@ -55,7 +55,7 @@ const FormData = () => {
       .then(response => {
         console.log(response);
         const jsonData = response;
-        axios.post("http://localhost:3000/qrGenerator", jsonData)
+        axios.post("https://beckn-qr-gobg.vercel.app/qrGenerator", jsonData)
           .then(response => {
             console.log(response)
             setQrCodeDataURL(response.data.uniqueId)
@@ -99,7 +99,7 @@ const FormData = () => {
       .then(response => {
         console.log(response);
         const jsonData = response;
-        axios.post("http://localhost:3000/qrGenerator", jsonData)
+        axios.post("https://beckn-qr-gobg.vercel.app/qrGenerator", jsonData)
           .then(response => {
             console.log(response)
             setQrCodeDataURL(response.data.uniqueId)
