@@ -6,7 +6,13 @@ const uuid = require('uuid');
 
 const app = express();
 const cors = require('cors');
-app.use(cors())
+app.use(cors(
+    {
+        origin:["https://beckn-qr.vercel.app/","http://127.0.0.1:5173/"],
+        methods: ["POST","GET"],
+        credentials:true
+    }
+))
 
 app.use(bodyParser.json());
 
@@ -18,7 +24,7 @@ function generateUniqueId() {
 
 mongoose.set('strictQuery',false);
 
-mongoose.connect('mongodb://0.0.0.0:27017/beckn-admin').then(()=>{
+mongoose.connect('mongodb+srv://roshangeorge2003:Kolo100%40200@cluster1.yejrjjy.mongodb.net/?retryWrites=true&w=majority').then(()=>{
     app.listen(3000,()=>{
         console.log("Server is listening on 3000");
     })
