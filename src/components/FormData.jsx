@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex flex-col items-center">
         <div className='m-4'><img src="/beckn-logo.png" alt="Logo"/></div>
-        <div><img src="public/QR Code.gif" alt="Logo"/></div>
+        <div><img src="/QRCode.gif" alt="Logo"/></div>
       </div>
     </nav>
   );
