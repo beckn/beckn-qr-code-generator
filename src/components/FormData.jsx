@@ -55,7 +55,7 @@ const FormData = () => {
       .then(response => {
         console.log(response);
         const jsonData = response;
-        axios.post("https://beckn-qr-141g.vercel.app/qrGenerator", jsonData)
+        axios.post("https://beckn-qr-141g.vercel.app/api/qrGenerator", jsonData)
           .then(response => {
             console.log(response)
             setQrCodeDataURL(response.data.uniqueId)
@@ -99,7 +99,7 @@ const FormData = () => {
       .then(response => {
         console.log(response);
         const jsonData = response;
-        axios.post("https://beckn-qr-141g.vercel.app/qrGenerator", jsonData)
+        axios.post("https://beckn-qr-141g.vercel.app/api/qrGenerator", jsonData)
           .then(response => {
             console.log(response)
             setQrCodeDataURL(response.data.uniqueId)
@@ -198,7 +198,7 @@ const FormData = () => {
 <div >
 {qrCodeDataURL && !isLoading && (
   <div className="flex flex-col items-center mt-4">
-    <QRCode value={`https://beckn-qr.vercel.app/ui/${qrCodeDataURL}`} />
+    <QRCode value={`https://beckn-qr.vercel.app/api/ui/${qrCodeDataURL}`} />
     <div className="mt-2">
       <Link
         to={`/ui/${qrCodeDataURL}`}
@@ -209,7 +209,7 @@ const FormData = () => {
     </div>
     <div className="mt-2">
       <a
-        href={`https://beckn-qr.vercel.app/ui/${qrCodeDataURL}`}
+        href={`https://beckn-qr.vercel.app/api/ui/${qrCodeDataURL}`}
         download={`QR_Code_${qrCodeDataURL}.png`}
         className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-block"
       >

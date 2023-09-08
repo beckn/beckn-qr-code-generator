@@ -41,7 +41,7 @@ const dataSchema = new mongoose.Schema({
 const DataModel = mongoose.model('Data', dataSchema);
 
 // Admin posts JSON data to generate QR code
-app.post('/qrGenerator', async (req, res) => {
+app.post('/api/qrGenerator', async (req, res) => {
     const jsonData = req.body;
 
     // Save the data in the database and generate a unique identifier
@@ -58,7 +58,7 @@ app.post('/qrGenerator', async (req, res) => {
 });
 
 // User scans QR code to retrieve and display data
-app.get('/getData/:id', async (req, res) => {
+app.get('/api/getData/:id', async (req, res) => {
     const uniqueId = req.params.id;
 
     // Retrieve data from the database based on the unique identifier
