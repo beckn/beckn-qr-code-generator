@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     open: true,
-    origin: 'http://127.0.0.1:3000',
+    origin: 'https://beckn-qr-141g.vercel.app',
   },
 })
