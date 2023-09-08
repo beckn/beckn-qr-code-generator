@@ -79,7 +79,7 @@ const FormData = () => {
     setIsLoading(true);
     setLoadingMessage('Loading...');
 
-    const url = 'https://api-node-dev.mobilityreferencebap.becknprotocol.io/client/v2/search'; // Replace with your actual endpoint URL
+    const url = 'https://api-node-dev.mobilityreferencebap.becknprotocol.io/client/v2/search';
 
     const data = {
       "context": {
