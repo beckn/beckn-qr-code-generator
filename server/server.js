@@ -8,7 +8,7 @@ const app = express();
 const cors = require('cors');
 app.use(cors(
     {
-        origin:["https://beckn-qr.vercel.app/","http://127.0.0.1:5173/"],
+        origin:["https://beckn-qr.vercel.app/","http://127.0.0.1:5173/",],
         methods: ["POST","GET"],
         credentials:true
     }

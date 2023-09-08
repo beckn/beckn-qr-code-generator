@@ -198,7 +198,7 @@ const FormData = () => {
 <div >
 {qrCodeDataURL && !isLoading && (
   <div className="flex flex-col items-center mt-4">
-    <QRCode value={`http://localhost:5173/ui/${qrCodeDataURL}`} />
+    <QRCode value={`https://beckn-qr.vercel.app/ui/${qrCodeDataURL}`} />
     <div className="mt-2">
       <Link
         to={`/ui/${qrCodeDataURL}`}
@@ -209,7 +209,7 @@ const FormData = () => {
     </div>
     <div className="mt-2">
       <a
-        href={`http://localhost:5173/ui/${qrCodeDataURL}`}
+        href={`https://beckn-qr.vercel.app/ui/${qrCodeDataURL}`}
         download={`QR_Code_${qrCodeDataURL}.png`}
         className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-block"
       >
