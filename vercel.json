@@ -1,7 +1,7 @@
 {
     "headers": [
       {
-        "source": "https://beckn-qr-141g.vercel.app/(.*)",
+        "source": "/(.*)",
         "headers": [
           { "key": "Access-Control-Allow-Credentials", "value": "true" },
           { "key": "Access-Control-Allow-Origin", "value": "*" },
