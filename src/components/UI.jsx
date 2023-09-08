@@ -75,7 +75,7 @@ const UI = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(`http://127.0.0.1:3000/getData/${qrCodeDataURL}`);
+        const response = await axios.get(`https://beckn-qr-141g.vercel.app/getData/${qrCodeDataURL}`);
         setData(response.data.data);
       } catch (error) {
         console.error('Error fetching data:', error);
