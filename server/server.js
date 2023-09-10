@@ -15,10 +15,13 @@ app.use(cors(
 ))
 
 app.use(bodyParser.json());
-
+app.use(express.static('public'));
 function generateUniqueId() {
     return uuid.v4();
 }
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+  });
 
 // MongoDB setup and schema definition
 
