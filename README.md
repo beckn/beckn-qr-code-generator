@@ -22,6 +22,10 @@ To get started with QRBeckn, follow these steps:
 2. Install the required dependencies.
 3. Run the application.
 
+# Documentations
+
+- Week 2: https://docs.google.com/document/d/1NbK7iSvtemrWZAF96F3mscLAny0-WqiCTE19IVqz-oU/edit?usp=sharing
+
 ## Usage
 
 Once QRBeckn is up and running, users can simply scan QR codes associated with Beckn Provider Partners to instantly access product information.
