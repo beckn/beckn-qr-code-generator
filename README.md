@@ -42,14 +42,14 @@ Beckn QR-QR Platform has 2 parts
     
 ### Installing and running ReactJS client
 
-## Step 1: Go to root directory
+### Step 1: Go to root directory
 
     npm install
     npm run dev
     
 ### Installing and running Node server
 
-## Step 2: Go to ./server
+### Step 2: Go to ./server
   
     npm install
     npm run devel
