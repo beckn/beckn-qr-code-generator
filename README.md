@@ -14,37 +14,108 @@ The motivation behind building QRBeckn lies in providing users with a tool that 
 - Simplified navigation of the Beckn ecosystem.
 - Enhanced user satisfaction and efficiency in commerce interactions.
 
-## Getting Started
+## Demo Links
 
-To get started with QRBeckn, follow these steps:
+- [Explore the Live Demo Site here](https://beckn-qr-code-generator.vercel.app/)
+- [Watch How to use the Beckn QR-QR Platform through this Video](https://drive.google.com/file/d/1d8T7fjGNuMUhCLTK74BxUeDz8yEZXTNO/view?usp=sharing)
 
-1. Clone the repository: `git clone https://github.com/yourusername/qrbeckn.git`
-2. Install the required dependencies.
-3. Run the application.
+## Getting started
+To get started with the Beckn QR-QR Interpretor, please try out the demo site at: https://beckn-qr-code-generator.vercel.app/
+
+### Local Installation
+To Run Beckn QR-QR Platform on your Local Machine, please follow the instructions below:
+
+## Pre Installation Steps
+
+Prerequisities
+
+	1. Node > 14x
+	3. NPM
+
+Beckn QR-QR Platform has 2 parts 
+
+	1. React client
+	2. Node server
+    
+    
+### Installing and running ReactJS client
+
+## Step 1: Go to root directory
+
+    npm install
+    npm run dev
+    
+### Installing and running Node server
+
+## Step 2: Go to ./server
+  
+    npm install
+    npm run devel
+    
 
 ## Documentations
 
-- Week 2: https://docs.google.com/document/d/1NbK7iSvtemrWZAF96F3mscLAny0-WqiCTE19IVqz-oU/edit?usp=sharing
+- [Basic E-Comm API Endpoints of Beckn](https://github.com/roshangeorge97/beckn-qr-code-generator/blob/main/Existing%20API%20Endpoints.md)
+- [Research for Search Building Block in Different Domains](https://github.com/roshangeorge97/beckn-qr-code-generator/blob/main/Exploring%20Search%20Building%20Block%20of%20Various%20Platforms.md)
+- [Search Building Block Functionalities and Sequence Diagram](https://github.com/roshangeorge97/beckn-qr-code-generator/blob/main/Search%20building%20block%20functionalities%20and%20sequence%20diagram.md)
 
 ## Usage
 
 Once QRBeckn is up and running, users can simply scan QR codes associated with Beckn Provider Partners to instantly access product information.
 
-## Contributing
+## Project Structure
 
-We welcome contributions to QRBeckn! If you would like to contribute to this project, please follow these guidelines:
+``` bash
+.eslintrc.cjs
+.gitignore
+DESIGN.md
+Existing API Endpoints.md
+Exploring Search Building Block of Various Platforms.md
+LICENSE
+README.md
+Search building block functionalities and sequence diagram.md
+index.html
+package-lock.json
+package.json
+pics
+   |-- C24-1.png
+   |-- C24-2.png
+   |-- CD1.png
+   |-- CD2.png
+   |-- PE1.png
+   |-- PE2.png
+   |-- amazon1.png
+   |-- amazon2.png
+   |-- dummy.md
+   |-- meesho1.png
+   |-- meesho2.png
+   |-- userflow.png
+postcss.config.js
+public
+   |-- QR Code (1).gif
+   |-- QRCode.gif
+   |-- beckn-logo.png
+   |-- header-image.png
+   |-- react.svg
+   |-- vite.svg
+server
+   |-- package.json
+   |-- server.js
+   |-- vercel.json
+src
+   |-- App.css
+   |-- App.jsx
+   |-- components
+   |   |-- FormData.jsx
+   |   |-- LoadingOverlay.jsx
+   |   |-- UI.jsx
+   |-- index.css
+   |-- main.jsx
+tailwind.config.js
+vercel.json
+vite.config.js
+```
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b feature/new-feature`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
-4. Push your changes to your fork: `git push origin feature/new-feature`.
-5. Create a Pull Request (PR) to the main repository.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-If you have any questions or suggestions regarding QRBeckn, feel free to reach out to us at [contact@qrbeckn.com](mailto:contact@qrbeckn.com).
 
