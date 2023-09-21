@@ -2,6 +2,8 @@
 
 QRBeckn was developed to address the challenges users face when trying to discover and access specific products and services within the Beckn ecosystem. The traditional process of manually searching through various Beckn Provider Partners (BPPs) for desired offerings can be time-consuming and overwhelming. QRBeckn streamlines this experience by leveraging QR codes to provide users with instant access to relevant product information, simplifying interactions and enhancing user satisfaction.
 
+<img src="/pics/home-1.png" width="300" height="300" alt="Description">
+
 ## Why QRBeckn?
 
 QRBeckn was conceived with the intention of creating a more user-centric and efficient way to engage with the Beckn ecosystem. The project recognizes the growing demand for simplicity and convenience in modern commerce interactions. By allowing users to scan QR codes associated with BPPs, QRBeckn eliminates the need for users to navigate through extensive lists of providers and offerings. This streamlined approach not only saves users time but also enhances their ability to quickly access and engage with the products and services they desire.
