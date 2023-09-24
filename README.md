@@ -23,12 +23,22 @@ The motivation behind building QRBeckn lies in providing users with a tool that 
 
 ## Using Docker
 
-**Building Docker Images**
+#### Using Docker
+
+**Step 1: Clone the Repository**
+
+- Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/roshangeorge97/beckn-qr-code-generator
+cd beckn-qr-code-generator
+```
+**Step 2: Building Docker Images**
 
 - To build the frontend image, use `docker build -t react-app .` for building frontend (run this command in the root of the project).
 - To build the backend image, use `docker build -t api-server .` (this should be put in the `server` folder).
 
-**Running on your local machine**
+**Step 3: Running on your local machine**
 
 - Finally, come back to the root of the folder and run `docker-compose up` to get the project running with your backend.
 
