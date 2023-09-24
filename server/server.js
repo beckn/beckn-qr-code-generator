@@ -27,14 +27,14 @@ app.get('*', (req, res) => {
 
 mongoose.set('strictQuery',false);
 
-mongoose.connect('mongodb+srv://roshangeorge2003:Kolo100%40200@cluster1.yejrjjy.mongodb.net/?retryWrites=true&w=majority').then(()=>{
-    app.listen(3000,()=>{
-        console.log("Server is listening on 3000");
-    })
-    console.log("Connected!")
-}).catch((error)=>{
+mongoose.connect('mongodb://mongo:27017/beckn').then(() => {
+    app.listen(5000, '0.0.0.0', () => {
+        console.log("Server is listening on 0.0.0.0:5000");
+    });
+    console.log("Connected!");
+}).catch((error) => {
     console.log(error);
-})
+});
 
 const dataSchema = new mongoose.Schema({
     uniqueId: String, // Unique identifier for each data entry
