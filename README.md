@@ -4,24 +4,42 @@ QRBeckn was developed to address the challenges users face when trying to discov
 
 <img src="/pics/home-1.png" width="300" height="300" alt="Description">
 
+## Table of Contents
+1. [Introduction](#why-qrbeckn)
+   - [Motivation](#why-qrbeckn)
+2. [Features](#features)
+3. [Demo Links](#demo-links)
+4. [Using Docker](#using-docker)
+5. [Getting Started](#getting-started)
+6. [Documentations](#documentation)
+7. [Usage](#usage)
+8. [Project Structure](#project-structure)
+
 ## Why QRBeckn?
 
 QRBeckn was conceived with the intention of creating a more user-centric and efficient way to engage with the Beckn ecosystem. The project recognizes the growing demand for simplicity and convenience in modern commerce interactions. By allowing users to scan QR codes associated with BPPs, QRBeckn eliminates the need for users to navigate through extensive lists of providers and offerings. This streamlined approach not only saves users time but also enhances their ability to quickly access and engage with the products and services they desire.
 
 The motivation behind building QRBeckn lies in providing users with a tool that enhances their overall local commerce experience. By utilizing QR codes, the project aims to bridge the gap between users and BPPs, offering a seamless solution that aligns with contemporary preferences for instant and targeted interactions. QRBeckn's development is grounded in the aspiration to make commerce interactions within the Beckn ecosystem more intuitive, efficient, and user-friendly.
 
+<a  id="#why-qrbeckn"></a>
+
 ## Features
 
 - Instant access to product information through QR code scanning.
 - Simplified navigation of the Beckn ecosystem.
 - Enhanced user satisfaction and efficiency in commerce interactions.
+<a  id="#features"></a>
 
 ## Demo Links
 
 - [Explore the Live Demo Site here](https://beckn-qr-code-generator.vercel.app/)
 - [Watch How to use the Beckn QR-QR Platform through this Video](https://drive.google.com/file/d/1d8T7fjGNuMUhCLTK74BxUeDz8yEZXTNO/view?usp=sharing)
 
+<a  id="#demo-links"></a>
+
+
 ## Using Docker
+
 
 #### Using Docker
 
@@ -34,7 +52,7 @@ git clone https://github.com/roshangeorge97/beckn-qr-code-generator
 cd beckn-qr-code-generator
 ```
 **Step 2: Building Docker Images**
-
+<a  id="#using-docker"></a>
 - To build the frontend image, use `docker build -t react-app .` for building frontend (run this command in the root of the project).
 - To build the backend image, use `docker build -t api-server .` (this should be put in the `server` folder).
 
@@ -43,12 +61,13 @@ cd beckn-qr-code-generator
 - Finally, come back to the root of the folder and run `docker-compose up` to get the project running with your backend.
 
 ## Getting started
+<a  id="#getting-started"></a>
 To get started with the Beckn QR-QR Interpretor, please try out the demo site at: https://beckn-qr-code-generator.vercel.app/
 
 ### Local Installation
 To Run Beckn QR-QR Platform on your Local Machine, please follow the instructions below:
 
-## Pre Installation Steps
+### Pre Installation Steps
 
 Prerequisities
 
@@ -61,16 +80,16 @@ Beckn QR-QR Platform has 2 parts
 	2. Node server
     
     
-### Installing and running ReactJS client
+#### Installing and running ReactJS client
 
-### Step 1: Go to root directory
+#### Step 1: Go to root directory
 
     npm install
     npm run dev
     
-### Installing and running Node server
+#### Installing and running Node server
 
-### Step 2: Go to ./server
+#### Step 2: Go to ./server
   
     npm install
     npm run devel
@@ -82,12 +101,14 @@ Beckn QR-QR Platform has 2 parts
 - [Research for Search Building Block in Different Domains](https://github.com/roshangeorge97/beckn-qr-code-generator/blob/main/Exploring%20Search%20Building%20Block%20of%20Various%20Platforms.md)
 - [Search Building Block Functionalities and Sequence Diagram](https://github.com/roshangeorge97/beckn-qr-code-generator/blob/main/Search%20building%20block%20functionalities%20and%20sequence%20diagram.md)
 
-## Usage
+<a  id="#documentation"></a>
 
+## Usage
+<a  id="#usage"></a>
 Once QRBeckn is up and running, users can simply scan QR codes associated with Beckn Provider Partners to instantly access product information.
 
 ## Project Structure
-
+<a  id="#project-structure"></a>
 ``` bash
 .eslintrc.cjs
 .gitignore
