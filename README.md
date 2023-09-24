@@ -21,6 +21,17 @@ The motivation behind building QRBeckn lies in providing users with a tool that 
 - [Explore the Live Demo Site here](https://beckn-qr-code-generator.vercel.app/)
 - [Watch How to use the Beckn QR-QR Platform through this Video](https://drive.google.com/file/d/1d8T7fjGNuMUhCLTK74BxUeDz8yEZXTNO/view?usp=sharing)
 
+## Using Docker
+
+**Building Docker Images**
+
+- To build the frontend image, use `docker build -t react-app .` for building frontend (run this command in the root of the project).
+- To build the backend image, use `docker build -t api-server .` (this should be put in the `server` folder).
+
+**Running on your local machine**
+
+- Finally, come back to the root of the folder and run `docker-compose up` to get the project running with your backend.
+
 ## Getting started
 To get started with the Beckn QR-QR Interpretor, please try out the demo site at: https://beckn-qr-code-generator.vercel.app/
 
