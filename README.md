@@ -30,6 +30,16 @@ The motivation behind building QRBeckn lies in providing users with a tool that 
 - Enhanced user satisfaction and efficiency in commerce interactions.
 <a  id="#features"></a>
 
+## Provider IDs
+
+You can use any of these existing Beckn provider IDs as input to use in the live demo site.
+
+```
+./retail.kirana/ind.blr/100@retail-osm-prod.becknprotocol.io.provider
+./retail.kirana/ind.blr/101@retail-osm-prod.becknprotocol.io.provider
+./retail.kirana/ind.blr/129@retail-osm-stage.becknprotocol.io.provider
+```
+
 ## Demo Links
 
 - [Explore the Live Demo Site here](https://beckn-qr-code-generator.vercel.app/)
